@@ -1,0 +1,271 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f7eed5;
+  color: #3e2f1c;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #201c15;
+  color: #fcd34d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img.logo-img {
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.logo img.logo-img:hover {
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e5c07b;
+  font-weight: bold;
+  font-size: 1rem;
+  position: relative;
+}
+
+.nav-links li a:hover {
+  color: #fcd34d;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('ros.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh; /* Adjust height as needed */
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+
+.hero-temples::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.hero-title {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #fcd34d;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Temples Info Cards */
+.temples-info {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.temple-card {
+  display: flex;
+  background-color: #fff3d6;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.temple-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.temple-card img {
+  width: 50%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.card-content {
+  padding: 2rem;
+  flex: 1;
+}
+
+.card-content h2 {
+  font-size: 2rem;
+  color: #6e4c1e;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #3e2f1c;
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a1a;
+  color: #fcd34d;
+  text-align: center;
+  padding: 1.5rem;
+}
+.temple-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f3ea;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  gap: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.temple-section:hover {
+  transform: scale(1.01);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.temple-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.temple-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.temple-content h2 {
+  font-size: 2rem;
+  color: #5c432e;
+  margin-bottom: 0.5rem;
+}
+
+.temple-content p {
+  color: #3d2d20;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+.video-section {
+  background: linear-gradient(180deg, #1c1b18 0%, #3e2f20 100%);
+  padding: 4rem 1rem;
+  text-align: center;
+  color: #fcd34d;
+  position: relative;
+}
+
+.video-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: #fcd34d;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow: 0 0 5px #fcd34d, 0 0 10px #be7e12;
+  }
+  100% {
+    text-shadow: 0 0 10px #fcd34d, 0 0 20px #be7e12;
+  }
+}
+
+.video-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 5px solid #fcd34d;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px #fcd34d;
+  transition: transform 0.4s ease;
+}
+
+.video-wrapper:hover {
+  transform: scale(1.03);
+}
+
+.temple-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(90%) contrast(110%) saturate(120%);
+  pointer-events: none; /* disables controls appearing on hover */
+}
