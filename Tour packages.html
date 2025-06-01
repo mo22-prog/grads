@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Limitless Kemet | Tour Packages</title>
+  <link rel="stylesheet" href="Tour Package.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+ <nav class="navbar">
+  <div class="logo">
+  <a href="#">
+    <img src="logo.png" alt="Limitless Kemet Logo" class="logo-img" />
+  </a>
+</div>
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Tours</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Hero Section -->
+<header class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Discover the Wonders of Egypt</h1>
+    <p class="hero-subtitle">Sail the Nile, roam the temples, and walk with the pharaohs.</p>
+    <a href="#tours" class="hero-btn">Start Your Journey</a>
+  </div>
+</header>
+
+
+  <!-- Tour Packages Section -->
+<section class="packages">
+  <h2 class="section-title">Our Tour Packages</h2>
+
+  <!-- Package 1: Pyramids -->
+  <div class="package">
+    <img src="pyramids.jpg" alt="Pyramids Tour">
+    <div class="package-content">
+      <h3>Pyramids of Giza Adventure</h3>
+      <p>Stand before the great pyramids and Sphinx, uncovering the mysteries of ancient engineering and pharaonic culture.</p>
+      <ul class="details-list">
+        <li><span class="check-icon">✓</span> Guided tour of the Pyramids & Sphinx</li>
+        <li><span class="check-icon">✓</span> Camel ride around Giza Plateau</li>
+        <li><span class="check-icon">✓</span> Entry to the Great Pyramid (optional)</li>
+        <li><span class="check-icon">✓</span> Lunch at a local Egyptian restaurant</li>
+      </ul>
+      <p class="price">Cost : 9000 EGP</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Package 2: Nile Cruise -->
+  <div class="package">
+    <img src="nile.jpg" alt="Nile Cruise">
+    <div class="package-content">
+      <h3>Majestic Nile Cruise</h3>
+      <p>Glide along the legendary Nile River with luxurious stops at historical cities like Luxor and Aswan.</p>
+      <ul class="details-list">
+        <li><span class="check-icon">✓</span> 4-night deluxe cruise accommodation</li>
+        <li><span class="check-icon">✓</span> Stops at Luxor, Edfu, Kom Ombo & Aswan</li>
+        <li><span class="check-icon">✓</span> Temple tours with expert Egyptologist</li>
+        <li><span class="check-icon">✓</span> All meals and onboard entertainment</li>
+      </ul>
+      <p class="price">Cost : 10000 EGP</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Package 3: Ancient Temples -->
+  <div class="package">
+    <img src="temples.jpg" alt="Ancient Temples Tour">
+    <div class="package-content">
+      <h3>Temples of the Gods</h3>
+      <p>Step into ancient sanctuaries like Karnak and Abu Simbel and feel the energy of divine legacy.</p>
+      <ul class="details-list">
+        <li><span class="check-icon">✓</span> Access to Karnak, Abu Simbel & more</li>
+        <li><span class="check-icon">✓</span> Private transport with A/C</li>
+        <li><span class="check-icon">✓</span> Entry tickets & photo ops included</li>
+        <li><span class="check-icon">✓</span> Free souvenir papyrus scroll</li>
+      </ul>
+      <p class="price">Cost : 15000 EGP </p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Package 3: Ancient Temples -->
+  <div class="package">
+    <img src="temples.jpg" alt="Ancient Temples Tour">
+    <div class="package-content">
+      <h3>Temples of the Gods</h3>
+      <p>Step into ancient sanctuaries like Karnak and Abu Simbel and feel the energy of divine legacy.</p>
+      <ul class="details-list">
+        <li><span class="check-icon">✓</span> Access to Karnak, Abu Simbel & more</li>
+        <li><span class="check-icon">✓</span> Private transport with A/C</li>
+        <li><span class="check-icon">✓</span> Entry tickets & photo ops included</li>
+        <li><span class="check-icon">✓</span> Free souvenir papyrus scroll</li>
+      </ul>
+      <p class="price">Cost : 15000 EGP </p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Limitless Kemet. All rights reserved.</p>
+  </footer>
+    
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  });
+</script>
+
+<script>
+  ScrollReveal().reveal('.package', {
+    delay: 300,
+    duration: 800,
+    easing: 'ease-out',
+    origin: 'bottom',
+    distance: '50px'
+  });
+
+  ScrollReveal().reveal('.hero-title, .hero-subtitle, .hero-btn', {
+    delay: 200,
+    duration: 1000,
+    interval: 200,
+    origin: 'top',
+    distance: '40px'
+  });
+</script>
+
+</body>
+</html>
