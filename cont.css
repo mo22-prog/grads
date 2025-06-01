@@ -1,0 +1,113 @@
+body {
+    background-image: url(cant.jgp.jpg);
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+h2 {
+    color: #1a3c5e;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.underline {
+    width: 50px;
+    height: 3px;
+    background-color: #f5c518;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group label .required {
+    color: red;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+.row {
+    display: flex;
+    gap: 20px;
+}
+.row .form-group {
+    flex: 1;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+}
+.footer {
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 50, 0.7);
+    z-index: 1;
+}
+.footer p {
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+    margin: 0;
+}
+.captcha {
+    margin: 20px 0;
+    text-align: center;
+}
+.captcha a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+.send-btn {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1a3c5e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.send-btn:hover {
+    background-color: #153048;
+}

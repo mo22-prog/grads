@@ -1,0 +1,212 @@
+/* Professional Pharaoh-Themed Reviews Page with Purple Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  background: url('photos/reviewbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: #f5f0e6;
+  min-height: 100vh;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  padding: 40px 15px;
+}
+
+.container {
+  background: rgba(30, 0, 50, 0.88);
+  max-width: 900px;
+  width: 100%;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px 6px #a067c7;
+  border: 3px solid #a974d6;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #e0b3ff;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 0 0 6px #3c095c;
+}
+
+header p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 5px 0 30px;
+  font-style: italic;
+  color: #d5c3e0;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ddbdfc;
+  border-bottom: 2px solid #8c4ecb;
+  padding-bottom: 5px;
+}
+
+.add-review form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+  margin-bottom: 50px;
+}
+
+.add-review form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-review form .form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #f0d6ff;
+  text-shadow: 0 0 4px #ab68ff;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 2px solid #c09be7;
+  background-color: #2d0d4b;
+  color: #f5f0e6;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #a96bf0;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button[type="submit"] {
+  grid-column: 1 / -1;
+  background: #620ca8;
+  border: none;
+  color: #f8eaff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 14px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #bc6efb;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: #3f005c;
+}
+
+.required {
+  color: #ffaad4;
+  margin-left: 3px;
+}
+
+/* Reviews List */
+.reviews-list {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Scrollbar styling for modern browsers */
+.reviews-list::-webkit-scrollbar {
+  width: 10px;
+}
+.reviews-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.reviews-list::-webkit-scrollbar-thumb {
+  background-color: #934cdd;
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+
+/* Individual review card */
+.review-card {
+  background: rgba(160, 94, 247, 0.08);
+  border: 1.5px solid #caa4ff;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #bc85ff70;
+  color: #f8f3ff;
+  font-size: 1rem;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.review-name {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fbeaff;
+  text-shadow: 0 0 6px #b24cff;
+}
+
+.review-nationality {
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.85;
+  color: #e3b6ff;
+  margin-left: 8px;
+}
+
+.review-rating {
+  color: #eac6ff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Stars for rating */
+.review-rating .stars {
+  color: #f3d370;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+/* Review text */
+.review-text {
+  margin-top: 8px;
+  font-style: normal;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  color: #fff2f9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .add-review form {
+    grid-template-columns: 1fr;
+  }
+}

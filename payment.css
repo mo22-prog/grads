@@ -1,0 +1,111 @@
+/* Pharaoh Style Payment Page */
+body {
+    margin: 0;
+    font-family: 'Papyrus', fantasy, serif;
+    background: url('photos/majestic-pyramid-shape-awe-inspiring-ancient-civilization-monument-generated-by-ai.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f5deb3;
+  }
+  
+  .container {
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid gold;
+    box-shadow: 0 0 20px gold;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: gold;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .cart-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #fffacd;
+  }
+  
+  .cart-summary th, .cart-summary td {
+    border: 1px solid #f5deb3;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cart-total {
+    text-align: right;
+    font-size: 1.2em;
+    color: gold;
+    margin-bottom: 30px;
+  }
+  
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .payment-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    color: #fffacd;
+  }
+  
+  .payment-options label {
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid gold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .payment-options input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .payment-options label:hover {
+    background-color: gold;
+    color: black;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    color: #fffacd;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid gold;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+  }
+  
+  button[type="submit"] {
+    background-color: gold;
+    color: black;
+    padding: 12px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ffd700;
+  }
+  

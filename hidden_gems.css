@@ -1,0 +1,273 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Raleway', sans-serif;
+    color: #212121;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* Background image with opacity */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('photos/pexels-tima-miroshnichenko-6010335.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.8; 
+    z-index: -1;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #212121 !important;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 0 !important;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.brand-logo {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 35px !important;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#nav-mobile {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-mobile li a {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 20px !important;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+#nav-mobile li a:hover {
+    color: #ddd !important;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 80px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    background: none;
+}
+
+.container h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: black;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+/* Card section styling */
+.col.s12.m5 {
+    width: 100%;
+    margin: 0 auto 40px auto;
+}
+
+.header {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 30px !important;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #212121;
+}
+
+.card.horizontal {
+    display: flex;
+    align-items: stretch;
+    background-color: hwb(50 76% 10%);
+    border: 1px solid #b9b9b9;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.card.horizontal:hover {
+    box-shadow: 0 6px 12px rgba(153, 147, 147, 0.616);
+}
+
+.card-image {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+    border-radius: 5px 0 0 5px;
+}
+
+.card-stacked {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+    background-color: #f5f5f5;
+    border-radius: 0 5px 5px 0;
+    flex: 1;
+}
+
+.card-content p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.card-content p i b {
+    font-size: 1.1em;
+    color: #212121;
+}
+
+.card-content pre {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    color: #333;
+    white-space: pre-wrap;
+}
+
+.card-content h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+    color: #212121;
+}
+
+/* Subsection heading */
+.container h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #212121;
+    opacity: 0.7;
+}
+
+/* Back to Top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #212121;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-out;
+}
+
+#myBtn:hover {
+    background-color: #212121;
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+    background-color: #00695c !important;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 35px !important;
+    color: #fff !important;
+    margin: 0;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin-top: 60px;
+    }
+
+    .card.horizontal {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .card-image img {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-content {
+        border-radius: 0 0 5px 5px;
+    }
+
+    .brand-logo {
+        font-size: 25px !important;
+        margin-left: 10px !important;
+    }
+
+    #nav-mobile li a {
+        font-size: 16px !important;
+        padding: 0 10px;
+    }
+
+    #myBtn {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
