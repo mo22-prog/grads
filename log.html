@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limitless Kemet - Login</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Limitless Kemet</h1>
+        <p>Log in to explore Egypt's cultural treasures!</p>
+        <form action="/api/login" method="POST" class="login-form">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+            <p><a href="forgot-password.html">Forgot Password?</a></p>
+        </form>
+    </div>
+</body>
+</html>
