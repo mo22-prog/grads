@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Egypt Tourism Challenges</title>
+  <link rel="stylesheet" href="cha.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Google Fonts (Optional, for modern look) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Discover Egypt Logo" class="logo-img">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Challenges</a></li>
+      <li><a href="#">Tips</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section challenge-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Egypt Tourism Challenges</h1>
+      <p class="hero-subtitle">Complete adventures. Earn rewards. Discover Egypt like never before!</p>
+    </div>
+  </section>
+    
+<section class="challenges-section">
+  <h2 class="section-title"><i class="fas fa-trophy pulse"></i> Tourist Missions</h2>
+  <div class="challenge-grid">
+
+    <!-- Challenge Card -->
+    <div class="challenge-card-container">
+  <div class="challenge-card">
+    <img src="luxor.jpg" alt="luxor">
+      <div class="challenge-info">
+        <h3><i class="fas fa-landmark icon bounce"></i> Luxor lover</h3>
+        <p>Embark on a legendary 3-day journey through the heart of ancient Egypt. Explore luxor temple , Capture the magic, unlock history, and earn your reward!</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+  </div>
+</div>
+
+
+    <div class="challenge-card">
+      <img src="khan.jpg" alt="Khan El Khalili">
+      <div class="challenge-info">
+        <h3><i class="fas fa-store icon bounce"></i> Souk Explorer</h3>
+        <p>Navigate and buy from 5 shops in Khan El Khalili. Show your receipts to get a spice kit!</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+
+    <div class="challenge-card">
+      <img src="camel.jpg" alt="Camel Ride">
+      <div class="challenge-info">
+        <h3><i class="fas fa-tent icon bounce"></i> Desert Ride Master</h3>
+        <p>Take a camel ride around the Pyramids and snap 3 unique selfies to unlock a badge!</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+
+    <div class="challenge-card">
+      <img src="emusuem.jpg"Egyptian Museum">
+      <div class="challenge-info">
+        <h3><i class="fas fa-vial icon bounce"></i> Museum Maven</h3>
+        <p>Find and photograph 5 specific ancient artifacts at the Egyptian Museum.</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+<!-- Extra Challenges -->
+    <div class="challenge-card">
+      <img src="temples.jpg" alt="Temple Trailblazer">
+      <div class="challenge-info">
+        <h3><i class="fas fa-compass icon bounce"></i> Temple Trailblazer</h3>
+        <p>Visit 5 different temples across Egypt and document your journey. Unlock a digital Temple Collector badge!</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+        
+      </div>
+    </div>
+
+    <div class="challenge-card">
+      <img src="sina.jpg" alt="Sinai Sunrise Summit">
+      <div class="challenge-info">
+        <h3><i class="fas fa-mountain-sun icon bounce"></i> Sinai Sunrise </h3>
+        <p>Climb Mount Sinai before dawn and snap a sunrise selfie to earn the “Sky Chaser” reward.</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+
+    <div class="challenge-card">
+      <img src="lan.jpg" alt="Hieroglyph Decode">
+      <div class="challenge-info">
+        <h3><i class="fas fa-scroll icon bounce"></i> Hieroglyph Decode</h3>
+        <p>Find and decode 3 real ancient Egyptian hieroglyphic messages at historical sites.</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+
+    <div class="challenge-card">
+      <img src="felfel.jpg"alt= "Falafel Foodie">
+      <div class="challenge-info">
+        <h3><i class="fas fa-utensils icon bounce"></i> Falafel Foodie </h3>
+        <p>Try falafel from 3 different local vendors in Cairo or Alexandria.</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+<!-- Extra Challenges -->
+    <div class="challenge-card">
+      <img src="fish.jpg" alt="Fish Forager">
+      <div class="challenge-info">
+        <h3><i class="fas fa-fish icon bounce"></i> Fish Forager</h3>
+        <p>Visit Alexandria’s seaside fish market, buy something unique (even a spice or snack), and share your find.</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+        
+      </div>
+    </div>
+
+    <div class="challenge-card">
+      <img src="nile.jpg" alt="Nile River Dip">
+      <div class="challenge-info">
+        <h3><i class="fas fa-water icon bounce"></i> Nile River Dip</h3>
+        <p>Safely dip your toes in the Nile at a permitted spot — extra points if at sunrise or sunset.</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+
+    <div class="challenge-card">
+      <img src="pose.jpg" alt="Pharaoh Pose-Off">
+      <div class="challenge-info">
+        <h3><i class="fas fa-person-running icon bounce"></i> Pharaoh Pose-Off</h3>
+        <p>Snap your most regal Pharaoh pose at a famous statue and upload it.</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+
+    <div class="challenge-card">
+      <img src="sweets.jpg"alt= " Sweet Tooth">
+      <div class="challenge-info">
+        <h3><i class="fas fa-cookie-bite icon bounce"></i>Sweet Tooth </h3>
+        <p>Try basbousa, kunafa, and zalabia from different local sweet shops in one day.</p>
+        <button class="complete-btn" onclick="markComplete(this)">Complete</button>
+      </div>
+    </div>
+  </div>
+  <section class="ranking-section">
+  <h2 class="ranking-title">🎖 Your Journey, Your Rank</h2>
+  <div class="ranking-grid">
+    <div class="rank-card bronze">
+      <i class="fas fa-medal"></i>
+      <h3>Bronze Explorer</h3>
+      <p>Complete 3 challenges</p>
+    </div>
+    <div class="rank-card silver">
+      <i class="fas fa-trophy"></i>
+      <h3>Silver Adventurer</h3>
+      <p>Complete 5 challenges</p>
+    </div>
+    <div class="rank-card gold">
+      <i class="fas fa-crown"></i>
+      <h3>Gold Pharaoh</h3>
+      <p>Complete 8+ challenges</p>
+    </div>
+  </div>
+  
+  <section class="hot-right-now">
+  <h2>🔥 Hot Right Now</h2>
+  <div class="hot-list">
+    <div class="hot-item">
+      <i class="fas fa-route"></i> Ahmed just completed the <strong>Luxor Temple Dash</strong> – 5 mins ago
+    </div>
+    <div class="hot-item">
+      <i class="fas fa-mountain"></i> Julia finished the <strong>Mount Sinai Sunrise Hike</strong> – 15 mins ago
+    </div>
+    <div class="hot-item">
+      <i class="fas fa-umbrella-beach"></i> Carlos conquered the <strong>Red Sea Dive Quest</strong> – 30 mins ago
+    </div>
+    <div class="hot-item">
+      <i class="fas fa-landmark"></i> Emma finished the <strong>Karnak Temple Sprint</strong> – 1 hour ago
+    </div>
+    <div class="hot-item">
+      <i class="fas fa-hiking"></i> Layla just did the <strong>Desert Ride Master</strong> – 2 hours ago
+    </div>
+  </div>
+</section>
+
+  <section class="bonus-quest">
+  <h2>⏱ Bonus Quest: 3 in 24!</h2>
+  <p>Complete <strong>3 challenges in 24 hours</strong> and earn an exclusive reward!</p>
+  <div class="bonus-timer">
+    <span id="timer">24:00:00</span>
+  </div>
+  <button id="claimBonus" disabled>🎁 Claim Bonus</button>
+</section>
+<section class="mystery-hunt">
+  <h2>Mystery Clues Hunt 🕵️‍♂️</h2>
+  <p class="clue">
+    "I stand tall guarding the Nile’s banks,<br>
+    With a lion’s body and a king’s face.<br>
+    Who am I?"
+  </p>
+  <input type="text" id="answerInput" placeholder="Your answer here..." />
+  <button id="submitAnswer">Submit</button>
+
+  <p id="feedback"></p>
+
+  <div id="secretContent" class="hidden">
+    <h3>🎉 Congrats, Explorer!</h3>
+    <p>You unlocked a special discount code: <strong>EGYPT2025</strong></p>
+    <p>Use it at checkout for 15% off your Nile cruise booking.</p>
+  </div>
+</section>
+
+
+  <script>
+  function markComplete(button) {
+    const card = button.closest('.challenge-card');
+    if (!card.classList.contains('completed')) {
+      card.classList.add('completed');
+      button.textContent = 'Completed!';
+      button.disabled = true;
+    }
+  }
+</script>
+
+<script>
+  // Set the countdown timer for 24 hours from first visit
+  let countdown;
+  const storedStartTime = localStorage.getItem('bonusStartTime');
+
+  if (!storedStartTime) {
+    const now = new Date().getTime();
+    localStorage.setItem('bonusStartTime', now);
+    startCountdown(now);
+  } else {
+    startCountdown(parseInt(storedStartTime));
+  }
+
+  function startCountdown(startTime) {
+    const targetTime = startTime + 24 * 60 * 60 * 1000;
+
+    countdown = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetTime - now;
+
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("timer").innerText =
+        `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("timer").innerText = "00:00:00";
+      }
+    }, 1000);
+  }
+
+  // Fake tracking of completed challenges (adjust this logic to your real tracking)
+  let completed = 0;
+  const challengeButtons = document.querySelectorAll(".complete-btn");
+
+  challengeButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      if (!btn.classList.contains("done")) {
+        btn.classList.add("done");
+        completed++;
+        checkForBonus();
+      }
+    });
+  });
+
+  function checkForBonus() {
+    if (completed >= 3) {
+      const bonusBtn = document.getElementById("claimBonus");
+      bonusBtn.disabled = false;
+      bonusBtn.classList.add("active");
+    }
+  }
+</script>
+<script>
+const submitBtn = document.getElementById('submitAnswer');
+const answerInput = document.getElementById('answerInput');
+const feedback = document.getElementById('feedback');
+const secretContent = document.getElementById('secretContent');
+
+// The correct answer (case insensitive)
+const correctAnswer = 'Sphinx';
+
+submitBtn.addEventListener('click', () => {
+  const userAnswer = answerInput.value.trim().toLowerCase();
+
+  if (!userAnswer) {
+    feedback.textContent = "You gotta type something first!";
+    feedback.style.color = 'red';
+    return;
+  }
+
+  if (userAnswer === correctAnswer.toLowerCase()) {
+    feedback.textContent = "You got it! Unlocking your reward...";
+    feedback.style.color = 'green';
+
+    // Show secret content
+    secretContent.classList.remove('hidden');
+    // Disable input and button
+    answerInput.disabled = true;
+    submitBtn.disabled = true;
+  } else {
+    feedback.textContent = "Nah, try again! Think ancient Egypt 👀";
+    feedback.style.color = 'red';
+  }
+});
+</script>
+
+<script>
+  const hotList = document.querySelector('.hot-list');
+  const entries = [
+    '🌍 Youssef finished the <strong>Aswan Temple Hunt</strong> – just now',
+    '👣 Maya just completed the <strong>Nile River Relax Challenge</strong> – 2 mins ago',
+    '🏜️ Omar did the <strong>Siwa Oasis Discovery</strong> – 6 mins ago',
+    '🐪 Lina finished the <strong>Sunset Camel Trek</strong> – 10 mins ago'
+  ];
+
+  let i = 0;
+  setInterval(() => {
+    if (i < entries.length) {
+      const newItem = document.createElement('div');
+      newItem.className = 'hot-item';
+      newItem.innerHTML = entries[i];
+      hotList.prepend(newItem);
+      if (hotList.children.length > 6) {
+        hotList.removeChild(hotList.lastChild);
+      }
+      i++;
+    }
+  }, 5000);
+</script>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Discover Egypt | Gamify Your Journey</p>
+  </footer>
+
+</body>
+</html>   
