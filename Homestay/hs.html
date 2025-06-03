@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Homestay in Egypt | Live Like a Local</title>
+  <link rel="stylesheet" href="hs.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+></script>
+
+
+
+</head>
+<body>
+  <nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">
+      <img src="logo.png" alt="Logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="#homestays">Homestays</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</nav>
+
+
+  <header>
+    <h1>🏠 Egyptian Homestays</h1>
+    <p>Connect with locals. Sleep like a Pharaoh. Eat like family.</p>
+    <a href="#homestays" class="scroll-btn">Explore Homes</a>
+  </header>
+
+  <section id="homestays" class="homestay-section">
+    <h2>Featured Homestays</h2>
+    <div class="card-container">
+      <div class="homestay-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="cairo.jpg" alt="Cairo Family Home">
+          <h3>Cairo Family Stay</h3>
+          <p>Near Khan El Khalili</p>
+           <span class="price">EGP 600/night</span>
+        </div>
+        <div class="card-back">
+          <p>Includes homemade koshari & local guide service 💛</p>
+          <button onclick="bookNow(event)">Book Now</button>
+        </div>
+      </div>
+
+      <div class="homestay-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="aswan.jpg" alt="Aswan Nubian Stay">
+          <h3>Aswan Nubian Home</h3>
+          <p>Colorful riverside village</p>
+           <span class="price">EGP 750/night</span>
+        </div>
+        <div class="card-back">
+          <p>Traditional meals & cultural dance nights 🌙</p>
+          <button onclick="bookNow(event)">Book Now</button>
+        </div>
+      </div>
+
+      <div class="homestay-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="luxjpg.jpg" alt="Luxor Homestay">
+          <h3>Luxor Farmhouse</h3>
+          <p>Overlooking the Valley of Kings</p>
+           <span class="price">EGP 800/night</span>
+        </div>
+        <div class="card-back">
+          <p>Organic breakfast & temple walk tours 🌾</p>
+          <button onclick="bookNow(event)">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="homestay-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="siwa.jpg" alt="Siwa Oasis Hideaway">
+          <h3>Siwa Oasis Hideaway</h3>
+          <p>Palm-shaded Berber retreat</p>
+           <span class="price">EGP 1000/night</span>
+        </div>
+        <div class="card-back">
+          <p>Includes natural spring access & desert tea rituals 🏜️</p>
+          <button onclick="bookNow(event)">Book Now</button>
+        </div>
+      </div>
+
+      <div class="homestay-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="alex.jpg" alt="Alexandria Coastal Home">
+          <h3>Alexandria Coastal Home</h3>
+          <p>Steps from the Corniche</p>
+           <span class="price">EGP 550/night</span>
+        </div>
+        <div class="card-back">
+          <p>Seaside balcony & home-cooked seafood 🐟</p>
+          <button onclick="bookNow(event)">Book Now</button>
+        </div>
+      </div>
+
+      <div class="homestay-card" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="fayoum.jpg" alt="Fayoum Countryside Stay">
+          <h3>Fayoum Countryside Stay</h3>
+          <p>Village life near Qarun Lake</p>
+           <span class="price">EGP 740/night</span>
+        </div>
+        <div class="card-back">
+          <p>Pottery workshop & camel rides included 🐪</p>
+          <button onclick="bookNow(event)">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+<section class="map-section">
+  <h2>Explore Our Homestays on the Map</h2>
+  <div id="homestay-map"></div>
+</section>
+
+<section class="reviews-section">
+  <h2>Traveler Reviews</h2>
+  
+  <div class="review-card" data-aos="fade-up">
+    <img src="https://i.imgur.com/dYcYQ7E.png" alt="User photo" class="review-avatar">
+    <div class="review-content">
+      <h4>Anna 🇩🇪</h4>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“Our host in Siwa was absolutely amazing! The dates and tea by the spring were unforgettable.”</p>
+    </div>
+  </div>
+
+  <div class="review-card" data-aos="fade-up">
+    <img src="https://i.imgur.com/3GvwNBf.png" alt="User photo" class="review-avatar">
+    <div class="review-content">
+      <h4>Omar 🇪🇸</h4>
+      <div class="stars">⭐⭐⭐⭐</div>
+      <p>“I stayed with a family in Luxor who treated me like one of their own. 10/10 food and vibes!”</p>
+    </div>
+  </div>
+
+  <div class="review-card" data-aos="fade-up">
+    <img src="https://i.imgur.com/uIgDDDd.png" alt="User photo" class="review-avatar">
+    <div class="review-content">
+      <h4>Chloe 🇫🇷</h4>
+      <div class="stars">⭐⭐⭐⭐⭐</div>
+      <p>“Dahab was a dream. Yoga at sunrise, seafood at sunset — I didn’t want to leave.”</p>
+    </div>
+  </div>
+</section>
+
+<section class="host-spotlight">
+  <h2>Host Spotlight of the Week</h2>
+  <div class="host-profile">
+    <img src="tou.jpg" alt="Host Photo" class="host-photo" id="host-photo" />
+    <div class="host-info">
+      <h3 id="host-name"></h3>
+      <p class="host-location" id="host-location"></p>
+      <blockquote id="host-quote"></blockquote>
+    </div>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Egypt Vibes Tours. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+<script>
+function flipCard(card) {
+  card.classList.toggle('flipped');
+}
+
+function bookNow(event) {
+  event.stopPropagation();
+  alert("✅ Your homestay booking is on the way! We'll contact you soon!");
+}
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+const hosts = [
+  {
+    photo: "fatima.jpg",
+    name: "Fatima El-Sayed",
+    location: "Cairo, Egypt",
+    quote: "Welcoming travelers into our home lets me share our traditions and stories. There's nothing better than connecting across cultures."
+  },
+  {
+    photo: "mo.jpg",
+    name: "Mohamed Hassan",
+    location: "Luxor, Egypt",
+    quote: "Sharing a meal and stories with visitors from around the world is the highlight of my week."
+  },
+  {
+    photo: "tou.jpg",
+    name: "Nouran Abdel",
+    location: "Aswan, Egypt",
+    quote: "I love introducing guests to Nubian music and handmade crafts in our cozy home."
+  },
+  {
+    photo: "layla.jpg",
+    name: "Layla Mahmoud",
+    location: "Siwa Oasis, Egypt",
+    quote: "The desert nights are magical, and I enjoy sharing our oasis lifestyle with travelers seeking peace."
+  }
+];
+
+let currentHostIndex = 0;
+
+function updateHostSpotlight() {
+  const host = hosts[currentHostIndex];
+  
+  document.getElementById("host-photo").src = host.photo;
+  document.getElementById("host-photo").alt = `Photo of ${host.name}`;
+  document.getElementById("host-name").textContent = host.name;
+  document.getElementById("host-location").textContent = host.location;
+  document.getElementById("host-quote").textContent = host.quote;
+  
+  currentHostIndex++;
+  if (currentHostIndex >= hosts.length) currentHostIndex = 0;
+}
+
+// Initialize spotlight on page load
+document.addEventListener("DOMContentLoaded", () => {
+  updateHostSpotlight();
+  setInterval(updateHostSpotlight, 10000); // change every 10 seconds
+});
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const map = L.map("homestay-map").setView([26.8206, 30.8025], 6); // Centered on Egypt
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  }).addTo(map);
+
+  const homestays = [
+    {
+      city: "Cairo",
+      coords: [30.0444, 31.2357],
+      info: "Cairo - Traditional home with Nile views"
+    },
+    {
+      city: "Luxor",
+      coords: [25.6872, 32.6396],
+      info: "Luxor - Homestay near Karnak Temple"
+    },
+    {
+      city: "Aswan",
+      coords: [24.0889, 32.8998],
+      info: "Aswan - Cozy Nubian family stay"
+    },
+    {
+      city: "Siwa",
+      coords: [29.2042, 25.5196],
+      info: "Siwa Oasis - Palm garden guesthouse"
+    },
+    {
+      city: "Dahab",
+      coords: [28.5006, 34.5138],
+      info: "Dahab - Chill surf homestay"
+    }
+  ];
+
+  homestays.forEach(stay => {
+    L.marker(stay.coords)
+      .addTo(map)
+      .bindPopup(`<strong>${stay.city}</strong><br>${stay.info}`);
+  });
+});
+</script>
+</body>
+</html>
